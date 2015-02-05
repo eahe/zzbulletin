@@ -8,7 +8,7 @@ In this script is the zzbulletin plugin that can be set to start at the homepage
 <table style="text-align: center;margin: 0px auto;"><tr><td>
  <img src="http://php-zzbulletin.rhcloud.com/screenshot1.png" width="330" alt="zzbulletin image 1" >
  <img src="http://php-zzbulletin.rhcloud.com/screenshot2.png" width="330" alt="zzbulletin image 1" >
-<br>
+<br><br>
  <img src="http://php-zzbulletin.rhcloud.com/screenshot3.png" width="330" alt="zzbulletin image 1" >
 
 </td></tr></table>
