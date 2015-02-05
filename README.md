@@ -1,4 +1,4 @@
-# zzbulletin
+# zzbulletin readme
 <table style="text-align:left; width:75%; margin: 0px auto;"><tr><td>
 zzbulletin, eg, bulletin board, a forum has a front end admin and users control panel. It is loaded with features. For example, it has instant/email account activation and has 400 beautiful avatars with options to resize them. 
 <br><br>
@@ -8,10 +8,10 @@ I leave it up to the members to work on zzbulletin by submitting tickets and dev
 </td></tr></table>
 
 <table style="text-align: center;margin: 0px auto;"><tr><td>
- <img src="http://php-zzbulletin.rhcloud.com/screenshot1.png" width="300" alt="zzbulletin image 1" >
- <img src="http://php-zzbulletin.rhcloud.com/screenshot2.png" alt="zzbulletin image 1" >
+ <img src="http://php-zzbulletin.rhcloud.com/screenshot1.png" width="330" alt="zzbulletin image 1" >
+ <img src="http://php-zzbulletin.rhcloud.com/screenshot2.png" width="330" alt="zzbulletin image 1" >
 <br>
- <img src="http://php-zzbulletin.rhcloud.com/screenshot3.png" alt="zzbulletin image 1" >
+ <img src="http://php-zzbulletin.rhcloud.com/screenshot3.png" width="330" alt="zzbulletin image 1" >
 
 </td></tr></table>
 </body>
