@@ -1,0 +1,3 @@
+<?php
+$bulletin = "bulletin_";
+?>

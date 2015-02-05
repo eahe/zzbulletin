@@ -1,0 +1,34 @@
+The skeleton plugin is the basic / bare bone plugin used to create a plugin. The /project/includes/main/header.php, includes such files as "session.php", "functions.php" and "menu#". So there is no need to be concerned about how to access those files.
+
+At the top of your php page at root, place the following...
+
+require "includes/main/header.php";
+require 'includes/buttonsBulletin.php';
+
+... and all other important files will be included.
+
+Consider that you are creating a news plugin...
+
+1: The name of your plugin must only be one word long.. Rename the "/plugins/skeleton" folder to "news".
+
+2: Open the /plugins/news/configuration/skeleton.php file and replace all occurrence of "skeleton" with the name of your plugin.
+
+3: Open the /plugins/news/sql/install/skeleton.php file and replace all occurrence of "$skeleton" with the name of your plugin. Example, change {$skeleton} to {$news}. A basic sql table of {$skeleton}example is provided in that file. You could change "{$skeleton}example" to {$news}comments if that table is used to hold the comments of the users that commented on the news. Near the bottom of the php page, change (echo "Table example created successfully.<br>";) to (echo "Table comments created successfully.<br>";) if that table will be used to hold the comments of the users posts.
+
+4: Open the /plugins/news/sql/uninstall/skeleton.php and replace all occurrence of "$skeleton" with "$news". If you need to drop multiple tables use ("DROP TABLE IF EXISTS {$news}comments, {$news}posts;";).
+
+5: /plugins/skeleton/index.php is the root folder of the plugin news. That index.php page must exists or else there will be a 404 error.
+
+6: Open the /plugins/skeleton/includes/main/pdoTablePrefix.php and change the table prefix of "skeleton_" without quotes to "news_".
+
+7: Inside of the file /plugins/skeleton/includes/main/menu1.php are the side panel links. An example link is provided. Nine menu files can be displayed at the side panel. The names of that file must be called "menu1", "menu2" and so forth. If menu1 and menu3 exists but menu2 does not then there will be no errors.
+
+8: Open the /plugins/skeleton/includes/language/en.php page. Notice near the bottom of that page, the array of $skeleton_data[1]. If inside the index.php page had (echo $skeleton_data[1];), the output would be "Login example".
+
+9: Open the /plugins/skeleton/includes/main/variables.php file. Since that file is included from the header.php file, all important variables can be used at any page you create. In that file, change "{$skeleton}example" to "{$news}comments and then change $row1['example'] to match the sql table row in /sql/install/skeleton.php. Example, open the /sql/install/skeleton.php and change (`example` VARCHAR(1) NOT NULL default 'y',) to (`comments` VARCHAR(1) NOT NULL default 'y',). Next: in the variables.php change "$row1['example']" to "$row1['comments']". IMPORTANT: the variables used should not be the same as the variables used at "/includes/main/variables.php" or there is be a conflict. Therefore, good practice would be to use a line of code such as this line found at the skeleton variables file ($skeleton_example = $row1['example'];). All of the plugin variables, even the ones outside of the variable folder should have that prefix.
+
+10: In "/plugins/skeleton/includes/buttonsSkeleton.php" change the two words of "Skeleton" to "News". Next, change "/plugins/skeleton/includes/buttonsSkeleton.php" to "/plugins/skeleton/includes/buttonsNews.php" and in /plugins/skeleton/index.php, change "require 'includes/buttonsSkeleton.php';" to "require 'includes/buttonsNews.php';".
+
+The "/sqlExamples.php" has some PDO sql SELETE, INSERT, DELETE, COUNT examples."
+
+Thats it. Making a plugin is very easy. Have fun!

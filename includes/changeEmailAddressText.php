@@ -1,0 +1,1 @@
+No emails will be sent out about the change of an email address. instead, this bulletin will display your new email address here. The reason is that your current email address might be now used by someone else and that person would be able to reverse the changes of your new email address.

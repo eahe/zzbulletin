@@ -1,0 +1,3 @@
+<?php
+$skeleton = "skeleton_";
+?>

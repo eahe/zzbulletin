@@ -1,0 +1,76 @@
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On # Turn on the rewriting engine
+#RewriteBase /plugins/
+
+RewriteRule ^index index.php [NC,L] 
+RewriteRule ^index/([A-Za-z0-9-]+)/?$ index.php?f=$1 [NC,L] 
+
+RewriteRule ^threadViewAll/([A-Za-z0-9-]+)/?$ threadViewAll.php?id=$1 [NC,L]
+RewriteRule ^threadViewAll/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ threadViewAll.php?id=$1&p=$2 [NC,L] 
+
+RewriteRule ^forumNew/([A-Za-z0-9-]+)/?$ forumNew.php?f=$1 [NC,L]
+RewriteRule ^categoryNew/([A-Za-z0-9-]+)/?$ categoryNew.php?c=$1 [NC,L]
+
+RewriteRule ^threadNew/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ threadNew.php?f=$1&c=$2&t=$3 [NC,L]
+RewriteRule ^pollNew/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ pollNew.php?f=$1&c=$2&t=$3 [NC,L]
+
+RewriteRule ^forumDelete/([A-Za-z0-9-]+)/?$ forumDelete.php?f=$1 [NC,L]
+RewriteRule ^categoryDelete/([A-Za-z0-9-]+)/?$ categoryDelete.php?c=$1 [NC,L]
+
+RewriteRule ^categoryEdit/([A-Za-z0-9-]+)/?$ categoryEdit.php?c=$1 [NC,L]
+RewriteRule ^forumEdit/([A-Za-z0-9-]+)/?$ forumEdit.php?f=$1 [NC,L]
+RewriteRule ^forumEdit/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ forumEdit.php?f=$1&c=$2 [NC,L]
+RewriteRule ^postEdit/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ postEdit.php?id=$1&p=$2 [NC,L] 
+
+RewriteRule ^categoryReorder/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ categoryReorder.php?l=$1&a=$2 [NC,L] 
+
+RewriteRule ^markAsRead/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ markAsRead.php?c=$1&t=$2 [NC,L] 
+RewriteRule ^markAsRead/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ markAsRead.php?c=$1&t=$2&q=$3 [NC,L] 
+
+RewriteRule ^threadRead/([A-Za-z0-9-]+)/?$ threadRead.php?id=$1 [NC,L]
+RewriteRule ^threadRead/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ threadRead.php?id=$1&p=$2 [NC,L]
+
+RewriteRule ^threadDeleteAll/([A-Za-z0-9-]+)/?$ threadDeleteAll.php?c=$1 [NC,L]
+RewriteRule ^threadDelete/([A-Za-z0-9-]+)/?$ threadDelete.php?id=$1 [NC,L]
+
+RewriteRule ^subscribeForum/([A-Za-z0-9-]+)/?$ subscribeForum.php?c=$1 [NC,L]
+RewriteRule ^subscribeThread/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ subscribeThread.php?f=$1&c=$2&t=$3 [NC,L]
+
+RewriteRule ^threadPin/([A-Za-z0-9-]+)/?$ threadPin.php?id=$1 [NC,L]
+RewriteRule ^threadPin2/([A-Za-z0-9-]+)/?$ threadPin2.php?id=$1 [NC,L]
+
+RewriteRule ^threadLock/([A-Za-z0-9-]+)/?$ threadLock.php?id=$1 [NC,L]
+RewriteRule ^threadLock2/([A-Za-z0-9-]+)/?$ threadLock2.php?id=$1 [NC,L]
+
+RewriteRule ^postDelete/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ postDelete.php?id=$1&p=$2 [NC,L]
+
+RewriteRule ^postReply/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ postReply.php?id=$1&p=$2 [NC,L]
+RewriteRule ^postReply/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ postReply.php?id=$1&p=$2&q=$3 [NC,L]
+
+RewriteRule ^subscribeForum/([A-Za-z0-9-]+)/?$ subscribeForum.php?c=$1 [NC,L]
+RewriteRule ^subscribeForum2/([A-Za-z0-9-]+)/?$ subscribeForum2.php?c=$1 [NC,L]
+
+RewriteRule ^subscribeThread/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ subscribeThread.php?c=$1&t=$2 [NC,L]
+RewriteRule ^subscribeThread2/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ subscribeThread2.php?c=$1&t=$2 [NC,L]
+
+
+
+
+
+
+
+
+
+</IfModule>
+#RewriteEngine On # Turn on the rewriting engine
+#RewriteRule ^index/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ index.php?f=$1&o=$2 [NC,L] 
+
+ErrorDocument 403 /project/index.php?status=403
+ErrorDocument 404 http://localhost/project/404.php?status=404
+
+

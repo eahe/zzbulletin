@@ -1,0 +1,1 @@
+If the radio button was selected directly under Moderators then "Forum new" would have a value of 3 and because the permission check would have a value of 3 and greater than 3, only the Moderators and Administrators would be able to create a new forum.

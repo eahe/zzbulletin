@@ -1,0 +1,24 @@
+v1.3.0, nov 8 2014
+   * Added: breadcrumbs. Now users can go to a selected forum.
+   * Added: Threaded mode. Now threads can be displayed in threaded mode.  
+   * Added: maintenance mode feature.
+   * Added: javascript check.
+   * Fixed: When searching in advanced mode, error displayed when first category was not id 1 
+   * Fixed: poll header was displayed when changing from a thread with poll to a thread
+     without a poll.
+   * Fixed: Sanitized code.
+   * Fixed: At the footer, count incorrect for Total bulletin threads and Total bulletin posts.
+   * Fixed: profile save failed when not changing an avatar.
+
+v1.2.0, oct 17 2014
+   * Added: Search feature: Search for topicTitle and/or topicBody.
+   * Added: maximum file attachment upload size and maximum image upload size in Bulletin
+     configuration.
+   * Fixed: number of local male and female avatars at the Bulletin configuration url did not 	   save.
+   * Fixed: misleading error message when file excesses php.ini upload_max_filesize.
+   * Fixed: Ten resent bulletin posts did not display when logged in.
+   * Fixed: changed username minimum characters at register.php to 4 so that search can find
+     all usernames.
+
+v1.1.0, oct 11 2014
+   * Created text announcement. If enabled, to be displayed at the top of the page.

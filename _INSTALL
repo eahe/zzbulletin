@@ -1,0 +1,18 @@
+1: Depending on your server set up, the following files and folders need to have chmod values of 644, 664 or 666 for files, and 755, 775 or 777 for folders:
+	/install
+	/install/install1.php
+	/install/install2.php
+	/install/install3.php
+	/install/install4.php
+	/archive
+	/archive/attachment
+	/images
+	/images/avatars
+	/images/avatars/uploads
+	/configuration
+
+2: Go to the root of your website and follow the install instructions. Example, http://www.example.com
+
+3: Delete the install folder and all files wilthin it.
+
+4: chmod /configuration directory to either 644, 664 or 666.

@@ -1,0 +1,1251 @@
+@CHARSET "UTF-8";
+
+body {
+	word-wrap: break-word;
+	color:black; 
+	font-family: Verdana, Arial, sans-serif, "Trebuchet MS";
+	font-size: 16px !important;
+	background-color: #fff;
+}
+
+
+/* for limit word length in textareas */
+.cke_wordcount {
+	display:block;
+	float:right;
+	margin-top:-1px;
+	margin-right:3px;
+	color:red;
+	font-size:16px !important;
+}
+
+/* ckeditor textarea color */
+.cke_editable
+{
+	background-color: #fff;
+	font-size: 13px;
+	line-height: 1.6;
+}
+/* ckeditor header color */
+.cke_top{
+	background-color: #fff;
+	border-bottom:1px solid #b6b6b6;
+	padding:6px 8px 2px;
+	white-space:normal;
+}
+
+/* ckeditor footer color */
+.cke_bottom{
+	background-color: #fff;
+	padding:6px 8px 2px;
+	position:relative;
+	border-top:1px solid #ccc;
+}
+
+/* ckeditor toolbar color */
+.cke_toolgroup{
+	float:left;
+	margin:0 6px 5px 0;
+	border:1px solid #ccc;
+	border-bottom-color: #000;
+	background:#ddd;
+}
+
+
+/* tinymce textarea background and foreground color */
+body.mceContentBody {
+   background: #fff;
+   color: black !important;
+}
+
+/* tinymce toolbar color */
+.defaultSkin td.mceToolbar {background:lightblue; padding-top:1px; vertical-align:top}
+
+/* tinymce buttons border */
+.defaultSkin .mceButton {display:block; border:1px solid #000; width:20px; height:20px; margin-right:1px}
+
+/* tinymce status bar color */
+.defaultSkin .mceStatusbar {background:#000; font-family:'MS Sans Serif',sans-serif,Verdana,Arial; font-size:9pt; line-height:16px; overflow:visible;  display:block; height:20px}
+
+/* tinymce: changing color:#fff will change the path html tags text at the status bar. */
+.defaultSkin a:hover, .defaultSkin a:link, .defaultSkin a:visited, .defaultSkin a:active {text-decoration:none; font-weight:normal; cursor:default; color:#fff}
+
+/* tinymce: changing color:#fff will change the status bar path text color. */
+.defaultSkin table, .defaultSkin tbody, .defaultSkin a, .defaultSkin img, .defaultSkin tr, .defaultSkin div, .defaultSkin td, .defaultSkin iframe, .defaultSkin span, .defaultSkin *, .defaultSkin .mceText {border:0; margin:0; padding:0; background:transparent; white-space:nowrap; text-decoration:none; font-weight:normal; cursor:default; color:#fff; vertical-align:baseline; width:auto; border-collapse:separate; text-align:left}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.treeview, .treeview ul { 
+	padding: 8px 0pt 3px 0;
+	margin: 0;
+	list-style: none;
+}
+
+.treeview ul {
+	background-color: #fff;
+	margin-top: 3px;
+	padding: 0 0 0 10px;
+}
+
+/* for threaded display */
+.treeview2 ul {
+	background-color: transparent;
+	margin-top: 3px;
+	padding: 0 0 0 10px;
+}
+
+.treeview li { 
+	margin: 0;
+	padding: 1px 0pt 3px 10px;
+}
+
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.treeview a.selected {
+	background-color: #eee;
+}
+
+.filetree li { padding: 5px 0 2px 1px; }
+.filetree span.folder, .filetree span.file { padding: 0 0 0 20px; display: block; }
+.filetree span.folder { background: url(images/folder.gif) 0 0 no-repeat; }
+.filetree li.expandable span.folder { background: url(images/folder-closed.gif) 0 0 no-repeat; }
+.filetree span.file { background: url(images/file.gif) 0 0 no-repeat; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:active {
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+/* "if username charactor is too big then the text will break table1 and
+just under the "last post by*/
+.font1 {
+	font-size: 16px !important;
+}
+
+/* for permissionsBulletin.php file */
+#table-cell1 {
+	background: #fff;
+	padding: 3px;
+	text-align: center;
+}
+
+#table-cell2 {
+	background: #fff;
+	padding: 3px;
+	text-align: right;
+}
+
+#table-cell3 {
+	background: #e1eaf9;
+	padding: 3px;
+	text-align: center;
+}
+
+/* main content */
+#content {
+	padding: 15px 0 0 0;
+}
+
+/* main-content is the content without the sidebar below */
+#main-content {
+	margin-right: 275px;
+}
+
+/* to display the sidebar to the left, change float: right to
+float: left. Then at #main-content above, change margin-right
+to margin-left;" */
+/* left or right side panels */
+#sidebar {
+	width: 267px; 
+	float: right;
+}
+
+/* blockquote for tinymce */
+blockquote {
+	border: 1px solid gray;
+	font-size: 16px !important;
+	font-style: italic;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2px 0;
+	line-height: 1.45;
+	background-color: #ededed;
+	color: #383838;
+	border-color: #bbbbbb;
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* table is used for board home and threads view */
+.table1 {  
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+	max-width:none;	
+}
+
+.table1 td {
+	border: 1px solid gray;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #edf2fb;
+	color: black;
+	height: 37px;
+}
+
+.table1 th {
+	word-wrap:break-word;
+	border: 1px solid gray;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #336083;
+	color: white;
+	height: 37px;
+}
+
+/* alternating table colors */
+.table1 tr:nth-child(2) td {
+	background-color: #ffffff;
+	height: 37px;
+}
+
+/* comment the following if you don't want alternating color for table rows */
+.table1 tr:nth-child(odd) td {
+	background-color: #e6f3ea;
+	height: 37px;
+}
+
+/* alternating table colors */
+.table1 td#topic{
+	background-color: #4972a9;
+	text-align: center;
+	height: 37px;
+	color: white;
+}
+
+
+/* edit, new and reply file names */
+.table2 {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	max-width:none;
+}
+
+.table2 th {
+	word-wrap:break-word;
+	padding: 8px;
+	background-color: #336083;
+	color: white;
+}
+
+.table2 td {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: black;
+	background-color: #d4eddc;
+}
+
+
+/* index2.php display */
+.table3 {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+	height: 37px;
+	max-width:none;
+}
+
+.table3 th {
+	word-wrap:break-word;
+	border-collapse: collapse;
+	border: 1px solid gray;
+	padding-left: 5px;
+	background-color: #336083;
+	color: white;
+	height: 37px;
+}
+
+.table3 td {
+	border-collapse: collapse;
+	border: 1px solid gray;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #e5ecf9;
+	color: black;
+	height: 37px;
+}
+
+/* alternate table td colors*/
+.table3 tr:nth-child(2) td{
+	background-color: #ffffff;
+	height: 37px;
+}
+
+.table3 td:nth-child(2) {
+	background-color: #e6f3ea;
+	height: 37px;
+}
+
+/* used for email, password, username, login, pollnew, register display. */
+.table4 {
+	table-layout: auto;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+	max-width:none;
+}
+
+.table4 td {
+	border: 1px solid gray;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #e1eaf9;
+	color: black;
+	height: 37px;
+}
+
+.table4 th {
+	border: 1px solid gray;
+	padding: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #336083;
+	color: white;
+	height: 23px;
+}
+
+/* alternating table colors */
+.table4 tr:nth-child(even) td {
+	background-color: #e1eaf9;
+	height: 37px;
+}
+
+.table4 tr:nth-child(odd) td {
+	background-color: #d4eddc;
+	height: 37px;
+}
+
+/* used for permissionsBulletin.php, permissionsView.php files */
+.table5 {
+	table-layout: auto;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+	max-width:none;
+}
+
+.table5 td {
+	border: 1px solid gray;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #d4eddc;
+	color: black;
+	height: 37px;
+}
+
+.table5 th {
+	border: 1px solid gray;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #336083;
+	color: white;
+	height: 37px;
+}
+
+/* configurations / preferences and threadReadFlat display. */
+.table6 {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+	height: 37px;
+	max-width:none;
+	text-align: center;
+}
+
+.table6 th {
+	word-wrap:break-word;
+	border-collapse: collapse;
+	border: 1px solid gray;
+	padding-left: 5px;
+	background-color: #336083;
+	color: white;
+	height: 37px;
+}
+
+.table6 td {
+	border-collapse: collapse;
+	border: 1px solid gray;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #e5ecf9;
+	color: black;
+	height: 37px;
+}
+
+/* nth-child(1) and nth-child(2) will alternate table td colors
+ from left to right.*/
+.table6 td:nth-child(1) {
+	background-color: #edf2fb;
+	height: 37px;
+}
+
+.table6 td:nth-child(2) {
+	background-color: #e6f3ea;
+	height: 37px;
+}
+
+/* "used for bulletin buttons and banner advertisement" */
+.table7 {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 0px;
+	width: 100%;
+	max-width:none;
+}
+
+.table7 th {
+	word-wrap:break-word;
+	border-collapse: collapse;
+	padding-left: 5px;
+	background-color: #fff;
+	color: black;
+}
+
+.table7 td {
+	border-collapse: collapse;
+	border: 0px;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #fff;
+	color: black;
+}
+
+/* text ad */
+.table8 {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 0px;
+	width: 100%;
+	max-width:none;
+}
+
+.table8 td {
+	border-collapse: collapse;
+	border: 0px;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #8524ae;
+	color: white;
+}
+
+.table9 {
+	table-layout: auto;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+	max-width:none;
+}
+
+.table9 th {
+	border: 1px solid gray;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #f3e6bb;
+	color: white;
+	height: 37px;
+}
+
+/* alternating table colors */
+.table9 tr:nth-child(even) td {
+	background-color: #f9f5e6;
+	height: 37px;
+}
+
+.table9 tr:nth-child(odd) td {
+	background-color: #f9f5e6;
+	height: 37px;
+}
+
+
+
+
+
+
+
+/*  "the following is for the warning and help dialog boxes."
+	".ui-widget-header2 is for the warning dialog, while .ui-widget-header"
+	"is for the help dialog. when the number 2 is at the end of the class"
+	"then that refers to the warning dialog"
+/* dialog text alignment */
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+	text-align: left;
+	font-size: 18px !important;
+}
+
+/* dialog header background color */
+.ui-widget-header {
+	background: #00aa00;
+	color: #ffffff;
+	font-weight: bold;
+}
+.ui-widget-header2 {
+	background: #aa0000;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* dialog background color */
+.ui-widget-content {
+	border: 1px solid #000000;
+	background: #ffffff;
+	color: #000000;
+}
+.ui-widget-content2 {
+	border: 1px solid #000000;
+	background: #ffffff;
+	color: #000000;
+}
+
+/* dialog button foreground color */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #d8dcdf;
+	background: #26587e;
+	color: #ffffff;
+}
+
+/* dialog button background color */
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #eeeeee;
+	background: #37698f;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* dialog position and display */
+.ui-dialog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .2em;
+	outline: 0;
+	width: 550px !important;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 100%;
+	width: 21px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .5em;
+	padding: .3em 1em .5em .4em;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+.ui-dialog .ui-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+
+
+
+
+
+
+
+
+
+
+/* change the color of four icons or fire, pin, lock and folder */
+.iconColor {
+	color: black;
+	border: 0;
+	padding: 0;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+/* change "right" to "left" to align all that is not hard coded */
+table#left,td#left,th#left {
+	text-align: left;
+}
+
+table#center,td#center,th#center {
+	text-align: center;
+}
+
+table#right,td#right,th#right {
+	text-align: right;
+}
+
+/* threaded mode display: used to center the "Forum topics" text 
+at threadviewall.php and with a white background. */
+td#backgroundcolor,th#backgroundcolor {
+	background-color: #ffffff;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* misc */
+p {
+ margin:0; 
+ padding:0;
+}
+ 
+div {
+	text-align: left;
+	padding: 0;
+}
+
+/* align the buttons or text hyperlinks */
+#buttonsTextAlign {
+	text-align: center;
+	padding: 0;
+}
+
+span {
+	text-align: left;
+	font-size: 16px !important;
+}
+
+span[lang] {
+	font-style: italic;
+}
+
+postSignature {
+	font-size: 15px !important;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	max-width:100%;
+	width:100%;
+	border-color: #333;
+}
+
+th {
+	font-weight: normal;
+}
+
+td {		
+	padding-left: 5px;
+	padding-right: 5px;
+	border-color: #333;
+	word-wrap:break-word;
+	font-size: 16px;
+	color:red;
+}
+
+
+/* used for tinymce tables */
+.table6 td table td:nth-child(1) {	
+	background-color: #fff;
+}
+
+.table6 td table td:nth-child(2) {
+	background-color: #fff;
+}
+.table6 td table td {	
+	background-color: #fff;
+}
+
+.threadedBGColor {
+	color: purple;
+	font-style: italic;
+}
+
+textarea {
+   font-size:14px !important;
+   border: none;
+   width: 100%;
+   height: 100%;
+   -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
+   -moz-box-sizing: border-box; /* FF1+ */
+    box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+}
+
+label.error,label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: red;
+	font-style: italic;
+}
+
+input.checkbox {
+	border: none;
+}
+
+input.radio {
+	border: none;
+}
+
+input:focus {
+	border: 1px solid blue;
+}	
+
+input.error {
+	border: 1px solid red;
+}
+
+input {
+	border: 1px darkblue;
+	border-width: 1px;
+	font-size: 16px !important;
+	font-family: Arial, Verdana, sans-serif, "Trebuchet MS";
+	padding: 1px 0px 1px 0px;
+}
+
+select {
+	font-size: 16px !important;
+	font-family: Arial, Verdana, sans-serif, "Trebuchet MS";
+}
+
+input.attach {
+	padding: 5px;
+}
+
+input,input#input2,button {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 4px;
+	border: 1px solid black;
+}
+
+#button{
+    position: relative;
+    left:-1px;
+    background-color:#e5ecf9;
+}
+
+.nowrap {
+  white-space: nowrap ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* polls */
+#container{
+	width:255px;
+	border:1px solid #ddd;
+
+}
+
+#container p{
+	margin:0; line-height:1.5em;
+	text-align:left;
+}
+#pollcontainer{
+	border:1px solid #f3f3f3;
+	background:#f8f7e6; 
+}
+
+#loader{ 
+	display:none; 
+	text-align:left;
+}
+
+.option{ 
+	margin:5px 0;
+}
+
+.option p{ 
+	line-height:1.1em; 
+	font-size:16px !important; 
+}
+
+.bar{ 
+	height:10px; 
+	background:#3399cc; 
+}
+
+.yourvote{ 
+	background:#113399; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* the tinymce css is below this line */
+ol,ul,dl { 
+	margin-right: 0px;
+	padding: 0 40px;
+    margin: 0;
+
+    display:auto;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+hr {
+	border-color: yellow;
+	background-color: yellow;
+	color: yellow;
+	width: 100%;
+}
+
+/* sets the image maximum width so that the image does not break the thread display */
+img {
+	max-width: 498px;
+	height: auto;
+}
+
+img.right {
+	border: 1px solid #ccc;
+	float: right;
+	margin-left: 5px;
+}
+
+img.left {
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 5px;
+}
+
+img.middle {
+	vertical-align:middle;
+	margin-left: 5px;
+	border: none;
+}
+
+pre {
+	white-space: pre-wrap; /* CSS 2.1 */
+	word-wrap: break-word; /* IE7 */
+}
+
+.marker {
+	background-color: Yellow;
+}
+
+figure {
+	text-align: center;
+	border: solid 1px #ccc;
+	border-radius: 2px;
+	background: rgba(0, 0, 0, 0.05);
+	padding: 10px;
+	margin: 10px 20px;
+	display: block; 
+}
+
+figure figcaption {
+	text-align: center;
+	display: block; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* font awesome icons are below this line */
+.reply:before {
+	font-family: 'FontAwesome';
+	content: "\f112";
+	margin-right: 5px;
+	color: black;
+	font-size: 18px !important;
+}
+
+.tasks:before {
+	font-family: 'FontAwesome';
+	content: "\f0ae";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.quote-left:before {
+	font-family: 'FontAwesome';
+	content: "\f10d";
+	margin-right: 5px;
+	color: black;
+	font-size: 18px !important;
+}
+
+.avatar:before {
+	font-family: 'FontAwesome';
+	content: "\f007";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.check-sign:before {
+	font-family: 'FontAwesome';
+	content: "\f14a";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.folder-open:before {
+	font-family: FontAwesome;
+	content: "\f07c";
+	margin-right: 5px;
+	color: black;
+	font-size: 18px !important;
+}
+
+.folder-close:before {
+	font-family: FontAwesome;
+	content: "\f07b";
+	margin-right: 5px;
+	color: black;
+	font-size: 18px !important;
+}
+
+.folder-open2:before {
+	font-family: FontAwesome;
+	content: "\f07c";
+	margin-right: 5px;
+	color: white;
+	font-size: 15px !important;
+}
+
+.search:before {
+	font-family: 'FontAwesome';
+	content: "\f002";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.exclamation:before {
+	font-family: FontAwesome;
+	content: "\f071";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.thumbs-o-up:before {
+	font-family: FontAwesome;
+	content: "\f087";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.thumbs-o-down:before {
+	font-family: FontAwesome;
+	content: "\f088";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.home:before {
+	font-family: FontAwesome;
+	content: "\f015" !important;
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.clipboard:before {
+	font-family: FontAwesome;
+	content: "\f0ea";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.files-o:before {
+	font-family: FontAwesome;
+	content: "\f0c5";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.pencil-square-o:before {
+	font-family: FontAwesome;
+	content: "\f044";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.pencil-square2-o:before {
+	font-family: FontAwesome;
+	content: "\f044";
+	margin-right: 5px;
+	color: black;
+	font-size: 18px !important;
+}
+
+.removeWhite:before {
+	font-family: FontAwesome;
+	content: "\f00d";
+	margin-right: 6px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.removeBlack:before {
+	font-family: FontAwesome;
+	content: "\f00d";
+	margin-right: 6px;
+	color: black;
+	font-size: 18px !important;
+}
+
+.removeRed:before {
+	font-family: FontAwesome;
+	content: "\f00d";
+	margin-right: 6px;
+	color: red;
+	font-size: 18px !important;
+}
+
+.file-text-o:before {
+	font-family: FontAwesome;
+	content: "\f0f6";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+/* edit post */
+.file-text:before {
+	font-family: FontAwesome;
+	content: "\f15c";
+	margin-right: 5px;
+	color: black;
+	font-size: 18px !important;
+}
+
+/* edit post */
+.file-textBlue:before {
+	font-family: FontAwesome;
+	content: "\f15c";
+	margin-right: 5px;
+	color: #266ad0;
+	font-size: 18px !important;
+}
+
+.bar-chart-o:before {
+	font-family: FontAwesome;
+	content: "\f080";
+	margin-right: 5px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.arrow-up:before {
+	font-family: FontAwesome;
+	content: "\f062";
+	margin-right: 2px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.arrow-down:before {
+	font-family: FontAwesome;
+	content: "\f063";
+	margin-right: 2px;
+	color: white;
+	font-size: 18px !important;
+}
+
+.pushpin:before {
+	font-family: FontAwesome;
+	content: "\f08d";
+	margin-right: 5px;
+	font-size: 18px !important;
+}
+
+.lock:before {
+	font-family: FontAwesome;
+	content: "\f023";
+	margin-right: 5px;
+	font-size: 18px !important;
+}
+
+.unlock:before {
+	font-family: FontAwesome;
+	content: "\f09c";
+	margin-right: 5px;
+	font-size: 18px !important;
+}
+
+.fire:before {
+	font-family: FontAwesome;
+	content: "\f06d";
+	margin-right: 5px;
+	font-size: 18px !important;
+}
+
+.folder2:before {
+	font-family: FontAwesome;
+	content: "\f07b";
+	margin-right: 5px;
+	font-size: 15px !important;
+}
+
+.file-o:before {
+	font-family: FontAwesome;
+	content: "\f016";
+	margin-right: 5px;
+	font-size: 18px !important;
+}
+
+.paperclip:before {
+	font-family: FontAwesome;
+	content: "\f0c6";
+	margin-right: 5px;
+	font-size: 18px !important;
+}
+
+.comment-o:before {
+	font-family: FontAwesome;
+	content: "\f0e5";
+	margin-right: 5px;
+	color: blue;
+	font-size: 18px !important;
+}

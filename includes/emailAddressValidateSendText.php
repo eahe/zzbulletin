@@ -1,0 +1,1 @@
+if you did not recieve an email with the validate code and you do not want to wait for one any longer then submit both your username and email address and then another email will be sent to your email address.
