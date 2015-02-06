@@ -10,7 +10,8 @@ In this script is the zzbulletin plugin that can be set to start at the homepage
  <img src="http://php-zzbulletin.rhcloud.com/screenshot2.png" width="330" alt="zzbulletin image 1" >
 <br><br>
  <img src="http://php-zzbulletin.rhcloud.com/screenshot3.png" width="330" alt="zzbulletin image 1" >
-
+<br><br>
+Test the <a href="http://php-zzbulletin.rhcloud.com">zzbulletin demo</a>.
 </td></tr></table>
 </body>
 </html>
